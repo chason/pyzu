@@ -1,5 +1,5 @@
 =================
-pyOGP
+pyzu 🐍図
 =================
 
 A Python class for retrieving `Open Graph`_ metadata from a website.
@@ -31,13 +31,14 @@ using Requests_.
 First initialize the object with the data from Requests::
 
     import requests
-    from pyogp import OGP
+    from pyzu import OGP
 
     r = requests.get('http://ogp.me/')
     ogp_me = OGP(r.text)
 
 After this we can check the validity of the data (essentially does it contain
-the four required attributes [title, type, image, and url]::
+the four required attributes as specified by the `OGP spec`_ [title, type,
+image, and url]::
 
     >>> ogp_me.is_valid
     True
@@ -53,3 +54,4 @@ that we were able to extract from the page::
 
 .. _Open Graph: http://ogp.me/
 .. _Requests: http://docs.python-requests.org/en/master/
+.. _OGP spec: http://ogp.me/#metadata

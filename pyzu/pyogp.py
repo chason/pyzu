@@ -1,6 +1,6 @@
 from typing import List
 import rdflib
-from pyogp.constants import REQUIRED_ATTRIBUTES, OG_NAMESPACES, OG_TYPES
+from .constants import REQUIRED_ATTRIBUTES, OG_NAMESPACES, OG_TYPES
 
 
 class OGP:

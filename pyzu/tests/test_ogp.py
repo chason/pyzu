@@ -1,5 +1,5 @@
 import pytest
-from pyogp import OGP
+from pyzu import OGP
 
 ogp_data = """
 <!DOCTYPE html>
