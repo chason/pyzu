@@ -28,7 +28,11 @@ setup(
     ],
     keywords='opengraph opengraph-data rdfa rdflib',
     py_modules=["pyzu"],
-    install_requires=['requests', 'rdflib'],
+    install_requires=[
+        'requests',
+        'rdflib',
+        'html5lib',
+    ],
     extras_require={
         'dev': ['bumpversion'],
         'test': [
@@ -37,7 +41,7 @@ setup(
             'python-coveralls',
             'pytest-cov',
             'pytest-mypy',
-            'pytest-flake8'
+            'pytest-flake8',
         ],
     },
     python_requires='>=3.6',
