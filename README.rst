@@ -2,6 +2,16 @@
 pyzu 🐍図
 =================
 
+.. image:: https://coveralls.io/repos/github/chason/pyzu/badge.svg?branch=master
+    :target: https://coveralls.io/github/chason/pyzu?branch=master
+
+.. image:: https://travis-ci.org/chason/pyzu.svg?branch=master
+    :target: https://travis-ci.org/chason/pyzu
+
+.. image:: https://badge.fury.io/py/pyzu.svg
+    :target: https://badge.fury.io/py/pyzu
+
+
 A Python class for retrieving `Open Graph`_ metadata from a website.
 
 Overview
