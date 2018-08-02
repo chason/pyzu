@@ -61,11 +61,39 @@ Preparing Pull Requests
 ------------------------
 
 #. Fork the repository
-#. Follow **PEP-8** for naming and `black <https://github.com/ambv/black>`_ for
-   formatting.
-#. Tests are run using `py.test`::
+#. Clone the repository from your account into your local file system::
 
-    pytest --cov-report term-missing --cov=pyzu --mypy --flake8
+    git clone git@github.com:<username>/pyzu.git
+#. Setup your upstream origin, and make sure your forked code has the latest
+   code::
+
+    git remote add upstream https://github.com/chason/pyzu.git
+    git fetch upstream
+    git checkout master
+    git merge upstream/master
+
+#. Create new branch::
+
+    git checkout -b my_awesome_feature
+
+#. Write new code following the :ref:`codestyle`
+#. Run tests::
+
+    pytest
+
+#. Commit your code, mentioning the issue number in the description::
+
+    git add *
+    git commit -m "Fixing issue #1"
+
+#. Push the code to your origin::
+
+    git push origin
+
+#. Point your web browser to the Github page for the project and click on the
+   `New pull request` button. `GitHub documentation
+   <https://help.github.com/articles/creating-a-pull-request-from-a-fork/>`_
+#. Pat yourself on the back for a job well done!
 
 .. _codestyle:
 
