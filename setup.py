@@ -32,7 +32,7 @@ setup(
     extras_require={
         'dev': ['bumpversion'],
         'test': [
-            'pytest',
+            'pytest>=3.5',
             'coverage',
             'python-coveralls',
             'pytest-cov',
