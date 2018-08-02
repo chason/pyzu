@@ -51,6 +51,7 @@ Look through the `GitHub issues for bugs
 <https://github.com/chason/pyzu/labels/type:%20bug>`_.
 
 A good bug fix will include:
+
 * Tests to ensure the bug is fixed and stays fixed.
 * A link to the appropriate issue in the pull request.
 
@@ -75,6 +76,7 @@ To create a consistent code style across the codebase its important to follow
 a few rules.
 
 All new code should meet the following guidelines:
+
 * PEP-8 for the most part, except for line length (set at 88).
 * Use `black <https://github.com/ambv/black>`_ for formatting.
 * Use type hinting everywhere.
