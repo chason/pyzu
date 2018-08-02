@@ -38,7 +38,7 @@ class OGP:
         if len(self._graph) == 0:
             self._parse_data()
         for ns in OG_NAMESPACES:
-            triples = self._graph[:ns[item]:]
+            triples = self._graph[: ns[item] :]
             for triple in triples:
                 results.append(triple[-1].toPython())
         if len(results) == 0:
@@ -51,10 +51,10 @@ class OGP:
 
     def _parse_data(self) -> None:
         assert self._data
-        self._graph.parse(data=self._data, format='html')
+        self._graph.parse(data=self._data, format="html")
 
     def _attr_is_valid(self, attr: str) -> bool:
-        return len(getattr(self, attr, '')) > 0
+        return len(getattr(self, attr, "")) > 0
 
     @property
     def is_valid(self) -> bool:
@@ -76,5 +76,5 @@ class OGP:
         for _, prop, value in self._graph:
             for ns in OG_NAMESPACES:
                 if prop.startswith(ns):
-                    self._properties[prop.replace(ns, '')] = value
+                    self._properties[prop.replace(ns, "")] = value
         return list(self._properties.keys())

@@ -20,16 +20,16 @@ ogp_data = """
 </html>
 """
 ogp_results = {
-    'title': "Open Graph protocol",
-    'type': "website",
-    'url': "http://ogp.me/",
-    'image': "http://ogp.me/logo.png",
-    'image:type': "image/png",
-    'image:width': '300',
-    'image:height': '300',
-    'image:alt': "The Open Graph logo",
-    'description': "The Open Graph protocol enables any web page to become a "
-                   "rich object in a social graph.",
+    "title": "Open Graph protocol",
+    "type": "website",
+    "url": "http://ogp.me/",
+    "image": "http://ogp.me/logo.png",
+    "image:type": "image/png",
+    "image:width": "300",
+    "image:height": "300",
+    "image:alt": "The Open Graph logo",
+    "description": "The Open Graph protocol enables any web page to become a "
+    "rich object in a social graph.",
 }
 
 multiple_images_data = """
@@ -79,8 +79,8 @@ def test_ogp_data_no_exist():
 
 def test_get_already_existing_property():
     ogp = OGP(data=ogp_data)
-    ogp._properties['new_data'] = 'foo'
-    assert ogp.new_data == 'foo'
+    ogp._properties["new_data"] = "foo"
+    assert ogp.new_data == "foo"
 
 
 def test_multiple_images():

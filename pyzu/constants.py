@@ -5,23 +5,10 @@ import rdflib
 
 
 OG_NAMESPACES = (
-    rdflib.Namespace('http://opengraphprotocol.org/schema/'),
-    rdflib.Namespace('http://ogp.me/ns#')
+    rdflib.Namespace("http://opengraphprotocol.org/schema/"),
+    rdflib.Namespace("http://ogp.me/ns#"),
 )
 
-REQUIRED_ATTRIBUTES = [
-    'title',
-    'type',
-    'image',
-    'url',
-    'description',
-]
+REQUIRED_ATTRIBUTES = ["title", "type", "image", "url", "description"]
 
-OG_TYPES = Union[
-    str,
-    int,
-    float,
-    bool,
-    datetime,
-    list,
-]
+OG_TYPES = Union[str, int, float, bool, datetime, list]

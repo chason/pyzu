@@ -1,6 +1,6 @@
 from typing import Sequence
 from .pyzu import OGP
 
-__all__: Sequence[str] = ['OGP']
+__all__: Sequence[str] = ["OGP"]
 
-__version__: str = '0.1.1'
+__version__: str = "0.1.1"
