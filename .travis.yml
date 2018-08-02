@@ -7,3 +7,5 @@ install:
   - pip install -e .[test]
 script:
   - pytest --cov-report term-missing --cov=pyzu --mypy --flake8
+after_success:
+  - coveralls

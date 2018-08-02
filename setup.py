@@ -38,7 +38,7 @@ setup(
         'test': [
             'pytest>=3.5',
             'coverage',
-            'python-coveralls',
+            'coveralls',
             'pytest-cov',
             'pytest-mypy',
             'pytest-flake8',
