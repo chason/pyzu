@@ -1,4 +1,5 @@
 from typing import List
+
 import rdflib
 from .constants import REQUIRED_ATTRIBUTES, OG_NAMESPACES, OG_TYPES
 
