@@ -80,7 +80,7 @@ All new code should meet the following guidelines:
 * PEP-8 for the most part, except for line length (set at 88).
 * Use `black <https://github.com/ambv/black>`_ for formatting.
 * Use type hinting everywhere.
-* Public methods should have a docstring that describes their use, paramters,
+* Public methods should have a docstring that describes their use, parameters,
   and output.
 * 100% test code coverage
 
