@@ -27,14 +27,13 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='opengraph opengraph-data rdfa rdflib',
-    py_modules=["pyzu"],
     install_requires=[
         'requests',
         'rdflib',
         'html5lib',
     ],
     extras_require={
-        'dev': ['bumpversion'],
+        'dev': ['bumpversion', 'black'],
         'test': [
             'pytest>=3.5',
             'coverage',
