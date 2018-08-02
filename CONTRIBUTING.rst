@@ -42,7 +42,7 @@ Please include the following in any bug report:
 If you can write a test that currently fails but should pass, that is an
 extremely valuable contribution, even if you cannot fix the bug itself.
 
-.. _fixbugs
+.. _fixbugs:
 
 Fixing bugs
 -------------
