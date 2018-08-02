@@ -13,7 +13,7 @@ ogp_data = """
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
     <meta property="og:image:alt" content="The Open Graph logo">
-    <meta property="og:description" content="The Open Graph protocol enables any web page to become a rich object in a social graph.">
+    <meta property="og:description" content="The Open Graph protocol enables any web page to become a rich object in a social graph."> # noqa
   </head>
   <body>
   </body>
@@ -28,7 +28,8 @@ ogp_results = {
     'image:width': '300',
     'image:height': '300',
     'image:alt': "The Open Graph logo",
-    'description': "The Open Graph protocol enables any web page to become a rich object in a social graph.",
+    'description': "The Open Graph protocol enables any web page to become a "
+                   "rich object in a social graph.",
 }
 
 multiple_images_data = """
@@ -46,12 +47,13 @@ multiple_images_data = """
     <meta property="og:image" content="http://ogp.me/logo2.png">
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
-    <meta property="og:description" content="The Open Graph protocol enables any web page to become a rich object in a social graph.">
+    <meta property="og:description" content="The Open Graph protocol enables any web page to become a rich object in a social graph."> # noqa
   </head>
   <body>
   </body>
 </html>
 """
+
 
 def test_ogp_is_valid():
     ogp = OGP(data=ogp_data)

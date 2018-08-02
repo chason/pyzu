@@ -36,6 +36,8 @@ setup(
             'coverage',
             'python-coveralls',
             'pytest-cov',
+            'pytest-mypy',
+            'pytest-flake8'
         ],
     },
     python_requires='>=3.6',

@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Dict
 
 import rdflib
 from .constants import REQUIRED_ATTRIBUTES, OG_NAMESPACES, OG_TYPES
@@ -22,12 +22,12 @@ class OGP:
         return a List[str] of all Open Graph metadata on webpage
     """
 
-    def __init__(self, data: str):
+    def __init__(self, data: str) -> None:
         """
         :param data: str of HTML/XHTML for the website to be parsed
         :type data: str
         """
-        self._properties = {}
+        self._properties: Dict[str, OG_TYPES] = {}
         self._graph = rdflib.Graph()
         self._data = data
 
@@ -78,4 +78,3 @@ class OGP:
                 if prop.startswith(ns):
                     self._properties[prop.replace(ns, '')] = value
         return list(self._properties.keys())
-

@@ -6,4 +6,4 @@ python:
 install:
   - pip install -e .[test]
 script:
-  - pytest --cov-report term-missing --cov=pyzu
+  - pytest --cov-report term-missing --cov=pyzu --mypy --flake8
