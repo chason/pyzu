@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='pyzu',
-    version='0.1.1',
+    version='0.1.2',
     description='Library to work with Open Graph metadata',
     long_description=long_description,
     long_description_content_type='text/x-rst',
