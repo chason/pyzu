@@ -44,4 +44,5 @@ setup(
         ],
     },
     python_requires='>=3.6',
+    packages=['pyzu']
 )
